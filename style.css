@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #000000;
+    color: #F6F6F6;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+strong {
+    color: #22D4FD;
+}
+img {
+    border-radius: 15px;
+    width: 400px;
+    height: 400px;
+}
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+}
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6% 8%;
+    gap: 58px;
+}
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+.apresentacao .apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.apresentacao .apresentacao__links .apresentacao__links__link {
+    background-color: #22D4FD;
+    border: 1px #fff solid;
+    color: #000000;
+    border-radius: 16px;
+    width: 280px;
+    height: 55px;
+    font-size: 50px;
+    text-align: center;
+    transition: 0,3s;
+}
+.apresentacao .apresentacao__links .apresentacao__links__link:hover {
+    color:  rgb(223, 159, 234);
+    border: 1px solid rgb(223, 159, 234);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.apresentacao__imagem {
+    background: linear-gradient(270deg, #48b196, #3a7062);
+    background-size: 400% 400%;
+    border-radius: 15px;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+.rodape {
+    text-align: center;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
