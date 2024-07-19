@@ -3,11 +3,14 @@
     --cor-primaria: #000000;
     --cor-secundaria: #F9F7F7;
     --cor-terciaria: #22D4FD;
-    --cor-extra: rgb(223, 159, 234);
+    --cor-extra: #df9fea;
     --cor-hover: #272727;
+    --cor-gradient: linear-gradient(90deg, #020024 0%, #22D4FD 50%, #020024 100%);
 
     --fonte-primaria: 'Krona One', sans-serif;
-    --fonte-secudaria: 'Montserrat', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+
+    --fonte-size-primaria: 1.25rem;
 }
 
 * {
@@ -23,64 +26,65 @@ strong {
     color: var(--cor-terciaria);
 }
 img {
-    border-radius: 15px;
-    width: 400px;
-    height: 400px;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
 }
 .cabecalho {
-    padding: 2% 0 0 8%;
+    padding: 1rem 0 0 8%;
 }
 .cabecalho__menu {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 2.5rem;
 }
 .cabecalho__menu__link {
     font-weight: 400;
-    font-family: var(--fonte-secudaria);
-    font-size: 18px;
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fonte-size-primaria);
     color: var(--cor-terciaria);
     text-decoration: none;
 }
 .cabecalho__menu__link:hover {
-    color: rgb(223, 159, 234);
+    color: var(--cor-extra);
 }
 .logo {
-    width: 80px;
-    height: 80px;
+    width: 4.25rem;
+    height: 4.25rem;
 }
 .apresentacao{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 4% 8%;
-    gap: 58px;
+    gap: 3.5rem;
 }
 .apresentacao__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
 }
 .apresentacao__conteudo__titulo {
-    font-size: 30px;
+    font-size: 1.8rem;
     font-family: var(--fonte-primaria);
 }
 .apresentacao__conteudo__texto {
-    font-size: 20px;
-    font-family: var(--fonte-secudaria);
+    font-size: var(--fonte-size-primaria);
+    font-family: var(--fonte-secundaria);
+    list-style: none;
 }
 .apresentacao .apresentacao__links{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 22px;
+    gap: var(--fonte-size-primaria);
     justify-content: space-between;
 }
 .apresentacao__links__subtitulo {
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--fonte-size-primaria);
 }
 .apresentacao .apresentacao__links .apresentacao__links__link {
     display: flex;
@@ -88,14 +92,13 @@ img {
     align-items: center;
     border: 2px var(--cor-terciaria) solid;
     color: var(--cor-secundaria);
-    border-radius: 16px;
-    width: 280px;
+    border-radius: 1rem;
+    width: 70%;
     height: 50px;
-    font-size: 20px;
-    font-family: var(--fonte-secudaria);
+    font-size: var(--fonte-size-primaria);
+    font-family: var(--fonte-secundaria);
     text-decoration: none;
     font-weight: 400;
-    transition: 0,3s;
 }
 .apresentacao__links__link i {
     margin-right: 10px;
@@ -103,15 +106,15 @@ img {
 }
 .apresentacao__links .apresentacao__links__link:hover {
     background-color: var(--cor-hover);
-    color:  rgb(223, 159, 234);
-    border: 2px solid rgb(223, 159, 234);
+    color:  var(--cor-extra);
+    border: 2px solid var(--cor-extra);
     transform: scale(1.1);
     transition: 0.3s;
 }
 .apresentacao__imagem {
-    background: linear-gradient(270deg, #48b196, #3a7062);
+    background: var(--cor-gradient);
     background-size: 400% 400%;
-    border-radius: 15px;
+    border-radius: 1rem;
 
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
@@ -119,12 +122,12 @@ img {
 }
 .rodape {
     text-align: center;
-    padding: 16px;
-    font-family: var(--fonte-secudaria);
+    padding: 0.8rem;
+    font-family: var(--fonte-secundaria);
     color: var(--cor-primaria);
-    font-size: 20px;
+    font-size: var(--fonte-size-primaria);
     font-weight: 400;
-    background-color: var(--cor-terciaria);
+    background: var(--cor-gradient);
 }
 
 @-webkit-keyframes AnimationName {

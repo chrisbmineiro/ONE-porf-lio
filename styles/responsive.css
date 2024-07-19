@@ -1,0 +1,33 @@
+@media (max-width: 800px){
+    .cabecalho {
+        padding: 10% 0 0 8%;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
+
+@media (max-width: 540px){
+    .cabecalho {
+        padding: 8% 0% 0% 4%;
+    }
+    .cabecalho__menu {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 420px){
+    .cabecalho {
+        padding: 4% 0 0 2%;
+    }
+    .cabecalho__menu {
+        gap: 1rem;
+    }
+    .logo {
+        width: 3rem;
+        height: 3rem;
+    }
+}
